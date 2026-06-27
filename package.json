@@ -1,0 +1,13 @@
+{
+  "name": "pokemensch",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "npm run test --workspace=@pokemensch/game-logic",
+    "start:mobile": "npm run start --workspace=@pokemensch/mobile"
+  }
+}
